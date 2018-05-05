@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="#01384a"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/resulardo"
+            android:layout_width="332dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_dark"
+            android:text=""
+            android:textAlignment="textEnd"
+            android:textSize="40dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/raiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="raiz"
+            tools:text="ⱱ" />
+
+        <Button
+            android:id="@+id/porciento"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="porciento"
+            android:text="%" />
+
+        <Button
+            android:id="@+id/cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
+            android:onClick="clear"
+            android:text="salir" />
+
+        <Button
+            android:id="@+id/borrar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="borrar"
+            android:text="c" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/potencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="potencia"
+            android:text="x^-1" />
+
+        <Button
+            android:id="@+id/csc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="csc"
+            android:text="csc" />
+
+        <Button
+            android:id="@+id/ctg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ctg"
+            android:text="ctg" />
+
+        <Button
+            android:id="@+id/factorial"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="factorial"
+            android:text="!" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sec"
+            android:text="sec" />
+
+        <Button
+            android:id="@+id/tangante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="tangante"
+            android:text="tan" />
+
+        <Button
+            android:id="@+id/coseno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="coseno"
+            android:text="cos" />
+
+        <Button
+            android:id="@+id/cecante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="cecante"
+            android:text="sin" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ciete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ciete"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/ocho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ocho"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/nueve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="nueve"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/dividir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="dividir"
+            android:text="/" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cuatro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="cuatro"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/cinco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="cinco"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/seis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="seis"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/multiplicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="multiplicar"
+            android:text="x" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/uno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="uno"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/dos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="dos"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/tres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="tres"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/recta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="recta"
+            android:text="-" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/punto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="punto"
+            android:text="." />
+
+        <Button
+            android:id="@+id/cero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="cero"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/igual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="igual"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/suma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="suma"
+            android:text="+" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/siguiente"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="combertidor" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
